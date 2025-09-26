@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "Sentry": {
+      "url": "https://mcp.sentry.dev/mcp/ammodev/nextjs-echo",
+      "type": "http"
+    }
+  }
+}
