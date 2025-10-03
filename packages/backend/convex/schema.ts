@@ -5,7 +5,7 @@ export default defineSchema({
   conversations: defineTable({
     threadId: v.string(),
     organizationId: v.string(),
-    contactSessionid: v.id("contactSessions"),
+    contactSessionId: v.id("contactSessions"),
     status: v.union(
       v.literal("unresolved"),
       v.literal("escalated"),
@@ -13,7 +13,7 @@ export default defineSchema({
     ),
   })
     .index("by_organization_id", ["organizationId"])
-    .index("by_contact_session_id", ["contactSessionid"])
+    .index("by_contact_session_id", ["contactSessionId"])
     .index("by_thread_id", ["threadId"])
     .index("by_status_and_organization_id", ["status", "organizationId"]),
   contactSessions: defineTable({
