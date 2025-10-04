@@ -1,9 +1,12 @@
 {
   "extends": "@workspace/typescript-config/react-library.json",
   "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@workspace/ui/*": ["./src/*"]
+      "@workspace/ui/*": ["./src/*"],
+      "@hooks/*": ["apps/web/hooks/*"]
     }
   },
   "include": ["."],
