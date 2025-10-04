@@ -80,7 +80,7 @@ export const WidgetChatScreen = () => {
     status: messages.status,
     loadMore: messages.loadMore,
     loadSize: 10,
-  })
+  });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
