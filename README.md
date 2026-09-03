@@ -111,26 +111,6 @@ nextjs-echo/
 - **users** — platform user record.
 - **organizations** — managed by the auth provider; every conversation, session, and knowledge base document is scoped to one.
 
-## Getting started
-
-### Prerequisites
-
-- Node.js 20+
-- pnpm
-
-### Environment variables
-
-Each app requires its own environment configuration (never committed to the repository), including credentials for the realtime backend, the authentication provider, the voice assistant integration, and the monitoring service. Refer to each app's setup documentation for the exact variables required.
-
-### Installation
-
-```bash
-pnpm install
-pnpm dev
-```
-
-The dashboard runs on port 3000 and the widget runs on port 3001 during local development.
-
 ## Available scripts
 
 | Command | Description |
@@ -140,10 +120,3 @@ The dashboard runs on port 3000 and the widget runs on port 3001 during local de
 | `pnpm lint` | Lint all apps and packages |
 | `pnpm format` | Format the codebase with Prettier |
 
-## Deployment
-
-The `web` and `widget` apps are independently deployable Next.js applications (e.g. to Vercel), while the Convex backend is deployed separately through the Convex CLI.
-
-## License
-
-This project is provided for portfolio and demonstration purposes.
